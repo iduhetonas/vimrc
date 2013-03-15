@@ -15,6 +15,10 @@ set autoread
 nmap <leader>w :w!<cr>
 set number
 
+" Automatically change the working directory to the file you're
+" using
+set autochdir
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
