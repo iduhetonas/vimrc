@@ -86,6 +86,9 @@ if has("gui_running")
     set guioptions-=e
     set t_Co=256
     set guitablabel=%M\ %t
+    " Currently there's a bug (gvim 7.3) where Vex causes the cursor to disappear. this
+    " is a temporary work-around by disabling the scrollbar.
+    set guioptions-=L
 endif
 
 " Set utf8 as standard encoding and en_US as the standard language
