@@ -15,6 +15,9 @@ set autoread
 nmap <leader>w :w!<cr>
 set number
 
+" Don't word-wrap
+set nowrap
+
 " Automatically change the working directory to the file you're
 " using
 set autochdir
