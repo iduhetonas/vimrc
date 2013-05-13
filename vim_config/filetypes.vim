@@ -9,7 +9,7 @@ au FileType c,cpp set tabstop=2
 """"""""""""""""""""""""""""""
 " Matlab section
 """""""""""""""""""""""""""""""
-au FileType m set number
-au FileType m set expandtab
-au FileType m set shiftwidth=2
-au FileType m set tabstop=2
+au BufRead,BufNewFile *.m set number
+au BufRead,BufNewFile *.m set expandtab
+au BufRead,BufNewFile *.m set shiftwidth=2
+au BufRead,BufNewFile *.m set tabstop=2
