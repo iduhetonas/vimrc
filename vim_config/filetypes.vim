@@ -13,3 +13,9 @@ au BufRead,BufNewFile *.m set number
 au BufRead,BufNewFile *.m set expandtab
 au BufRead,BufNewFile *.m set shiftwidth=2
 au BufRead,BufNewFile *.m set tabstop=2
+
+""""""""""""""""""""""""""""""
+" Python section
+"""""""""""""""""""""""""""""""
+au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4 
+autocmd BufRead *.py inoremap # X<c-h>#<space>
