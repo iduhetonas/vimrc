@@ -12,8 +12,6 @@ Run these commands in your terminal.
     git clone http://github.com/iduhetonas/vimrc.git ~/vimrc
     cd ~/vimrc
     ./install_vimrc.sh
-    git submodule init   
-    git submodule update 
 
 And you are good to go! Remember to install ctags as well for Tagbar support.
 
