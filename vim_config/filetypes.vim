@@ -19,3 +19,8 @@ au BufRead,BufNewFile *.m set tabstop=2
 """""""""""""""""""""""""""""""
 au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4 
 autocmd BufRead *.py inoremap # X<c-h>#<space>
+
+"""""""""""""""""""""""""""""""
+" Makefile section
+"""""""""""""""""""""""""""""""
+au FileType make setlocal noexpandtab
