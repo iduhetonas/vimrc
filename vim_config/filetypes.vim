@@ -28,4 +28,4 @@ au FileType make setlocal noexpandtab
 """""""""""""""""""""""""""""""
 " Haskell section
 """""""""""""""""""""""""""""""
-au Filetype *.hs,*.lhs set tabstop=4 expandtab shiftwidth=4 softtabstop=4
+au Filetype *.hs,*.lhs set tabstop=2 expandtab shiftwidth=2 softtabstop=2
