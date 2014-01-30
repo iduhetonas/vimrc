@@ -24,3 +24,8 @@ autocmd BufRead *.py inoremap # X<c-h>#<space>
 " Makefile section
 """""""""""""""""""""""""""""""
 au FileType make setlocal noexpandtab
+
+"""""""""""""""""""""""""""""""
+" Haskell section
+"""""""""""""""""""""""""""""""
+au Filetype *.hs,*.lhs set tabstop=4 expandtab shiftwidth=4 softtabstop=4
