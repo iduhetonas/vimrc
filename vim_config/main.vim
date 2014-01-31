@@ -199,3 +199,10 @@ else
 endif
 
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Ctags 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Sets the tags file to the first directory, or to the
+" CodeBase at work
+set tags=./tags;~/Sandbox/trunk/CodeBase
