@@ -203,6 +203,6 @@ endif
 " => Ctags 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Sets the tags file to the first directory, or to the
-" CodeBase at work
-set tags=./tags;~/Sandbox/trunk/CodeBase
+" Sets the tags file to the first directory.
+" If not found, walk up until tags file is found.
+set tags=./tags;/
