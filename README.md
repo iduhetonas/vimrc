@@ -8,6 +8,7 @@ This is my vimrc configuration, based initially on https://github.com/amix/vimrc
 As of this writing, you'll need: 
 
 Pyclewn (http://pyclewn.sourceforge.net/)
+
 Vim 7.4+
 
 ## Installation
