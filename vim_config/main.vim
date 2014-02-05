@@ -20,6 +20,9 @@ set number
 " using
 set autochdir
 
+" Set the filetype plugin detection
+filetype plugin indent on
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
