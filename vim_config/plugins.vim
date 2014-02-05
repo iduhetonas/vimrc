@@ -49,3 +49,6 @@ set completeopt=menuone,menu,longest,preview
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': [],
                            \ 'passive_filetypes': ['cpp'] }
+
+" Best Haskell Syntastic checker, but still has issues
+let g:syntastic_haskell_checkers = ['hdevtools']
