@@ -15,4 +15,4 @@
 	url = http://github.com/scrooloose/syntastic.git
 [submodule "vim-hdevtools-iduhetonas"]
 	path = bundle/vim-hdevtools
-	url = git@github.com:iduhetonas/vim-hdevtools
+	url = http://github.com/iduhetonas/vim-hdevtools
