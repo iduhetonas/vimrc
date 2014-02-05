@@ -6,6 +6,12 @@ au FileType c,cpp set expandtab
 au FileType c,cpp set shiftwidth=2
 au FileType c,cpp set tabstop=2
 
+"""""""""""""""""""""""""""""
+" C++ only section
+""""""""""""""""""""""""""""""
+au FileType cpp set tags+=$HOME/vimrc/default_tags/cpp_tags
+
+
 """"""""""""""""""""""""""""""
 " Matlab section
 """""""""""""""""""""""""""""""
