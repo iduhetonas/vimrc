@@ -6,12 +6,6 @@ au FileType c,cpp set expandtab
 au FileType c,cpp set shiftwidth=2
 au FileType c,cpp set tabstop=2
 
-"""""""""""""""""""""""""""""
-" C++ only section
-""""""""""""""""""""""""""""""
-au FileType cpp set tags+=$HOME/vimrc/default_tags/cpp_tags
-
-
 """"""""""""""""""""""""""""""
 " Matlab section
 """""""""""""""""""""""""""""""
@@ -34,4 +28,4 @@ au FileType make setlocal noexpandtab
 """""""""""""""""""""""""""""""
 " Haskell section
 """""""""""""""""""""""""""""""
-au Filetype *.hs,*.lhs set tabstop=2 expandtab shiftwidth=2 softtabstop=2
+au Filetype haskell set tabstop=2 expandtab shiftwidth=2 softtabstop=2
