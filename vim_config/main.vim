@@ -15,8 +15,6 @@ set autoread
 nmap <leader>w :w!<cr>
 set number
 
-" Don't word-wrap
-set nowrap
 
 " Automatically change the working directory to the file you're
 " using
@@ -129,8 +127,11 @@ set tw=500
 set ai "Auto indent
 set si "Smart indent
 
-" Issue with Windows Vim causing the cursor to
-" not delete to the previous line
+" Don't word-wrap
+set nowrap
+
+" Issue with various Vim configurations
+" not deleting to the previous line
 if has("win16") || has("win32")
     set backspace=2
 endif
