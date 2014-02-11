@@ -135,9 +135,7 @@ set nowrap
 
 " Issue with various Vim configurations
 " not deleting to the previous line
-if has("win16") || has("win32")
-    set backspace=2
-endif
+set backspace=indent,eol,start
 
 
 """"""""""""""""""""""""""""""
