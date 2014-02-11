@@ -16,7 +16,6 @@ let g:tagbar_left = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Ctags 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 " Sets the tags file to the first directory.
 " If not found, walk up until tags file is found.
 set tags=./tags;/
@@ -52,3 +51,10 @@ let g:syntastic_mode_map = { 'mode': 'active',
 
 " Best Haskell Syntastic checker, but still has issues
 let g:syntastic_haskell_checkers = ['hdevtools']
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => hdevtools-vim 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+au FileType haskell nnoremap <buffer> <F2> :HdevtoolsType<CR>
+au FileType haskell nnoremap <buffer> <silent> <F3> :HdevtoolsClear<CR>
