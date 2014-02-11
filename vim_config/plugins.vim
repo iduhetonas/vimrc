@@ -48,7 +48,7 @@ set completeopt=menuone,menu,longest,preview
 " Disable C++ checking, as it isn't accurate at this time
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': [],
-                           \ 'passive_filetypes': ['cpp'] }
+                           \ 'passive_filetypes': ['cpp', 'java'] }
 
 " Best Haskell Syntastic checker, but still has issues
 let g:syntastic_haskell_checkers = ['hdevtools']
