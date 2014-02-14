@@ -44,17 +44,17 @@ set completeopt=menuone,menu,longest,preview
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Syntastic 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Disable C++ checking, as it isn't accurate at this time
+" Disable C++ and Literate Haskell checking, as it isn't accurate at this time
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': [],
-                           \ 'passive_filetypes': ['cpp', 'java'] }
+                           \ 'passive_filetypes': ['cpp', 'java', 'lhaskell'] }
 
-" Best Haskell Syntastic checker, but still has issues
+" Best Haskell Syntastic checker
 let g:syntastic_haskell_checkers = ['hdevtools']
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => hdevtools-vim 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-au FileType haskell, lhaskell nnoremap <buffer> <F2> :HdevtoolsType<CR>
-au FileType haskell, lhaskell nnoremap <buffer> <silent> <F3> :HdevtoolsClear<CR>
+au FileType haskell nnoremap <buffer> <F2> :HdevtoolsType<CR>
+au FileType haskell nnoremap <buffer> <silent> <F3> :HdevtoolsClear<CR>
