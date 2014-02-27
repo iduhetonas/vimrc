@@ -10,6 +10,3 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = http://github.com/scrooloose/syntastic.git
-[submodule "bundle/vim-hdevtools"]
-	path = bundle/vim-hdevtools
-	url = http://github.com/bitc/vim-hdevtools

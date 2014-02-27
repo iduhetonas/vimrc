@@ -50,11 +50,12 @@ let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'passive_filetypes': ['cpp', 'java', 'lhaskell'] }
 
 " Best Haskell Syntastic checker
-let g:syntastic_haskell_checkers = ['hdevtools']
+let g:syntastic_haskell_checkers = ['ghc_mod']
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => hdevtools-vim 
+" => ghcmod-vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-au FileType haskell nnoremap <buffer> <F2> :HdevtoolsType<CR>
-au FileType haskell nnoremap <buffer> <silent> <F3> :HdevtoolsClear<CR>
+" There are tons more commands I can add, see :Ghc<TAB> and whatnot
+au FileType haskell nnoremap <buffer> <F2> :GhcModInfo<CR>
+"au FileType haskell nnoremap <buffer> <silent> <F3> :GhcModInfo<CR>
