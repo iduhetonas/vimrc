@@ -47,7 +47,7 @@ set completeopt=menuone,menu,longest,preview
 " Disable C++ and Literate Haskell checking, as it isn't accurate at this time
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': [],
-                           \ 'passive_filetypes': ['cpp', 'java', 'lhaskell'] }
+                           \ 'passive_filetypes': ['cpp', 'java'] }
 
 " Best Haskell Syntastic checker
 let g:syntastic_haskell_checkers = ['ghc_mod']
@@ -57,5 +57,8 @@ let g:syntastic_haskell_checkers = ['ghc_mod']
 " => ghcmod-vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " There are tons more commands I can add, see :Ghc<TAB> and whatnot
-au FileType haskell nnoremap <buffer> <F2> :GhcModInfo<CR>
-"au FileType haskell nnoremap <buffer> <silent> <F3> :GhcModInfo<CR>
+au FileType haskell nnoremap <buffer> <silent> <F2> :GhcModType<CR>
+au FileType haskell nnoremap <buffer> <silent> <F3> :GhcModTypeClear<CR>
+au FileType haskell nnoremap <buffer> <silent> <F4> :GhcModInfo<CR>
+au FileType haskell nnoremap <buffer> <silent> <F5> :GhcModCheck<CR>
+au FileType haskell nnoremap <buffer> <silent> <F6> :GhcModLint<CR>
