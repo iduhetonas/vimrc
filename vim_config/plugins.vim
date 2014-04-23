@@ -44,10 +44,12 @@ set completeopt=menuone,menu,longest,preview
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Syntastic 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Disable C++ and Java checking, as it isn't accurate at this time
+" Disable Java checking, as it isn't accurate at this time
+" TODO: C++ checking works, but needs to include more libraries
+" (e.g.) QApplication isn't found
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': [],
-                           \ 'passive_filetypes': ['cpp', 'java'] }
+                           \ 'passive_filetypes': ['java'] }
 
 " Best Haskell Syntastic checker
 let g:syntastic_haskell_checkers = ['ghc_mod']

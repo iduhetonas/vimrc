@@ -18,8 +18,4 @@ else
     echo "cabal-install not found, disabling ghcmod-vim."
 fi
 
-# This won't work on Windows,
-# so change this to not happen on Windows
-make 
-
 echo "Vimrc installed!"
