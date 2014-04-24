@@ -64,3 +64,10 @@ au FileType haskell nnoremap <buffer> <silent> <F3> :GhcModTypeClear<CR>
 au FileType haskell nnoremap <buffer> <silent> <F4> :GhcModInfo<CR>
 au FileType haskell nnoremap <buffer> <silent> <F5> :GhcModCheck<CR>
 au FileType haskell nnoremap <buffer> <silent> <F6> :GhcModLint<CR>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => YouCompleteMe
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:ycm_confirm_extra_conf = 0 " Turns off confirm of ycm_loading
+let g:ycm_global_ycm_extra_conf = '~/vimrc/scripts/.ycm_extra_conf.py'
