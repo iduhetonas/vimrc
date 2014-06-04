@@ -54,6 +54,11 @@ let g:syntastic_mode_map = { 'mode': 'active',
 " Best Haskell Syntastic checker
 let g:syntastic_haskell_checkers = ['ghc_mod']
 
+" C++ and Qt specific checking
+" Checks header files
+let g:syntastic_cpp_check_header = 1
+" Forces a recheck every time the file is written
+let g:syntastic_cpp_auto_refresh_includes = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ghcmod-vim
