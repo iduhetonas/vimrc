@@ -30,3 +30,10 @@ au FileType make setlocal noexpandtab
 " Haskell section
 """""""""""""""""""""""""""""""
 au Filetype haskell,lhaskell,cabal set tabstop=2 expandtab shiftwidth=2 softtabstop=2
+
+"""""""""""""""""""""""""""""""
+" C# section
+"""""""""""""""""""""""""""""""
+if has("win32")
+    " C# will likely just be on Windows
+endif

@@ -76,3 +76,9 @@ au FileType haskell nnoremap <buffer> <silent> <F6> :GhcModLint<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:ycm_confirm_extra_conf = 0 " Turns off confirm of ycm_loading
 let g:ycm_global_ycm_extra_conf = '~/vimrc/scripts/.ycm_extra_conf.py'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Omnisharp
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd FileType cs setlocal omnifunc=OmniSharp#Complete
+autocmd FileType cs nnoremap <F5> :wa!<cr>:OmniSharpBuildAsync<cr>
