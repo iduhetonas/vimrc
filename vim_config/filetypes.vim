@@ -34,5 +34,11 @@ au Filetype haskell,lhaskell,cabal set tabstop=2 expandtab shiftwidth=2 softtabs
 " C# section
 """""""""""""""""""""""""""""""
 if has("win32")
-    " C# will likely just be on Windows
+    " C# will likely just be on Window
+    if !exists("autocommands_loaded")
+        let autocommands_loaded = 1
+
+        " setup folding
+        autocmd BufNewFile,BufRead *.cs set foldmethod=syntax
+    endif
 endif
