@@ -7,3 +7,5 @@ Class-creator function
 Ctags generator in Vim
 
 Use depend file?
+
+Auto-align columns with visual mode
