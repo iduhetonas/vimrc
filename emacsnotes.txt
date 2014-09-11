@@ -1,5 +1,3 @@
-Autocomplete the header file
-
 Normalize the column length
 
 Class-creator function
