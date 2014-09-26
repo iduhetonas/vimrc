@@ -14,6 +14,7 @@ au BufRead,BufNewFile *.m set number
 au BufRead,BufNewFile *.m set expandtab
 au BufRead,BufNewFile *.m set shiftwidth=2
 au BufRead,BufNewFile *.m set tabstop=2
+map <silent> <F2> :!matlab -nodisplay -nosplash -nodesktop -r "run('%:p')" <CR>
 
 """"""""""""""""""""""""""""""
 " Python section
