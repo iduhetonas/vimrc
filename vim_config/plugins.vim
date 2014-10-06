@@ -59,6 +59,8 @@ let g:syntastic_haskell_checkers = ['ghc_mod']
 let g:syntastic_cpp_check_header = 1
 " Forces a recheck every time the file is written
 let g:syntastic_cpp_auto_refresh_includes = 1
+" Include QT Libraries
+let g:syntastic_cpp_include_dirs = ['/usr/include/qt4/QtGui']
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ghcmod-vim

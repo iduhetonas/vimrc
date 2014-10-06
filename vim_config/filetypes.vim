@@ -1,11 +1,12 @@
 """"""""""""""""""""""""""""""
-" C/C++ section
+" C and C++ section
 """""""""""""""""""""""""""""""
 au FileType c,cpp set number
 au FileType c,cpp set expandtab
 au FileType c,cpp set shiftwidth=2
 au FileType c,cpp set tabstop=2
 au FileType c,cpp set foldmethod=syntax
+au FileType c,cpp normal zR
 
 """"""""""""""""""""""""""""""
 " Matlab section
