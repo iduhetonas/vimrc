@@ -49,7 +49,7 @@ set completeopt=menuone,menu,longest,preview
 " (e.g.) QApplication isn't found
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': [],
-                           \ 'passive_filetypes': ['java'] }
+                           \ 'passive_filetypes': ['java', 'cpp'] }
 
 " Best Haskell Syntastic checker
 let g:syntastic_haskell_checkers = ['ghc_mod']
@@ -83,4 +83,10 @@ let g:ycm_global_ycm_extra_conf = '~/vimrc/scripts/.ycm_extra_conf.py'
 " => Omnisharp
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd FileType cs setlocal omnifunc=OmniSharp#Complete
-autocmd FileType cs nnoremap <F5> :wa!<cr>:OmniSharpBuildAsync<cr>
+autocmd FileType cs nnoremap <F5> :wa!<CR>:OmniSharpBuildAsync<CR>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => FSwitch
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <leader>h :FSHere <CR>
