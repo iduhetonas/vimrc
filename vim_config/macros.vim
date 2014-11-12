@@ -11,5 +11,5 @@
 " Mapping for the TeeJet Copyright Header
 "map <silent> <F2> a/**<CR>*<CR>* Copyright TeeJet Technologies <C-R>=strftime('%Y')<CR><CR>*<CR>*<CR>* @file<Space><CR>*<CR>*/<ESC>kkk$a
 "map <F2> :echo 'Current time is ' . strftime('%c')<CR>
-map <F3> a<C-R>=strftime('%c')<CR><Esc>
-
+"map <F3> a<C-R>=strftime('%c')<CR><Esc>
+nmap <leader>c :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q 
