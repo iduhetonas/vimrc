@@ -45,3 +45,9 @@ if has("win32")
         autocmd BufNewFile,BufRead *.cs set foldmethod=syntax
     endif
 endif
+
+
+"""""""""""""""""""""""""""""""
+" Javascript section
+"""""""""""""""""""""""""""""""
+au Filetype javascript set number expandtab shiftwidth=2 tabstop=2
