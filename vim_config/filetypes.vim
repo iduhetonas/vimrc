@@ -51,3 +51,8 @@ endif
 " Javascript section
 """""""""""""""""""""""""""""""
 au Filetype javascript set number expandtab shiftwidth=2 tabstop=2
+
+"""""""""""""""""""""""""""""""
+" Arduino section
+"""""""""""""""""""""""""""""""
+au Filetype *.ino set syntax=c
