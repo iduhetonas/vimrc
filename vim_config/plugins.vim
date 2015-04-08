@@ -14,7 +14,7 @@ let g:tagbar_left = 1
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Ctags 
+" => Ctags/Gtags
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Sets the tags file to the first directory.
 " If not found, walk up until tags file is found.
