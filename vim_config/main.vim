@@ -196,7 +196,7 @@ set background=dark
 if has("gui_running")
     colorscheme evening
 else
-    colorscheme slate
+    colorscheme elflord
 endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
