@@ -31,3 +31,9 @@ nmap <leader>c :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q
 "
 " Sets the GTAGSFORCECPP environment variable, to include .h files as well.
 nmap <leader>g :!GTAGSFORCECPP="" gtags . && global -t . > ./tags<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => TagBarToggle commands.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <silent> <leader>t :TagbarToggle<CR>
+nmap <silent> <leader>p :TagbarTogglePause<CR>
