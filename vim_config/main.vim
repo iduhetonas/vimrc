@@ -202,4 +202,4 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Encryption
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-silent! setlocal cm=blowfish2
+silent! setlocal cryptmethod=blowfish2
