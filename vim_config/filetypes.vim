@@ -6,7 +6,7 @@ au FileType c,cpp set expandtab
 au FileType c,cpp set shiftwidth=2
 au FileType c,cpp set tabstop=2
 au FileType c,cpp set foldmethod=syntax
-au FileType c,cpp normal zR
+au FileType c,cpp set foldlevel=20
 
 """"""""""""""""""""""""""""""
 " Matlab section
