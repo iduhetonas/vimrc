@@ -37,3 +37,8 @@ nmap <leader>g :!GTAGSFORCECPP="" gtags . && global -t . > ./tags<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <silent> <leader>t :TagbarToggle<CR>
 nmap <silent> <leader>p :TagbarTogglePause<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Custom search command.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"nmap <leader>f :!find . \( ! -regex '.*/.svn/.*' \) \( ! -regex '.*dox.*' \)  \( ! -name BROWSE \) \( ! -name '*~' \)  -type f -print0 | xargs -0 -e grep -nIH -e 
