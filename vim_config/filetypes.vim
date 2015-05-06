@@ -23,7 +23,7 @@ map <silent> <F2> :!matlab -nosplash -nodesktop -r "run('%:p')" <CR>
 """""""""""""""""""""""""""""""
 au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4 
 " For some reason, this command is a huge pain for switching from .py files
-"autocmd BufRead *.py inoremap # X<c-h>#<space>
+autocmd BufRead *.py inoremap # X<c-h>#<space>
 
 """""""""""""""""""""""""""""""
 " Makefile section
@@ -63,3 +63,11 @@ au Filetype *.ino set syntax=c
 " Bash section
 """""""""""""""""""""""""""""""
 au BufNewFile *.sh 0r  $MYVIMRCDIR/templates/skeleton.sh
+
+function! NewHeaderFile()
+    silent! 0r $MYVIMRCDIR/templates/skeleton.h
+    %s/FILENAME/\=expand("%:t:r")
+    %s/\#expand("%:t:r")/\U
+endfunction
+
+autocmd BufNewFile *.h call NewHeaderFile()
