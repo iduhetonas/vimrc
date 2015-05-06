@@ -82,6 +82,10 @@ set foldcolumn=1
 " Enable syntax highlighting
 syntax enable 
 
+" Set the max columns to do syntax highlighting
+" Note: This is because Vim syntax highlighting is slow on huge files
+set synmaxcol=150
+
 set background=dark
 
 " Set extra options when running in GUI mode
