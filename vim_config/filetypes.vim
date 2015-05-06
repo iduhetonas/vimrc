@@ -7,6 +7,7 @@ au FileType c,cpp set shiftwidth=2
 au FileType c,cpp set tabstop=2
 au FileType c,cpp set foldmethod=syntax
 au FileType c,cpp set foldlevel=20
+au BufNewFile *.c 0r  $MYVIMRCDIR/templates/skeleton.c
 
 """"""""""""""""""""""""""""""
 " Matlab section
@@ -57,3 +58,8 @@ au Filetype javascript set number expandtab shiftwidth=2 tabstop=2
 " Arduino section
 """""""""""""""""""""""""""""""
 au Filetype *.ino set syntax=c
+
+"""""""""""""""""""""""""""""""
+" Bash section
+"""""""""""""""""""""""""""""""
+au BufNewFile *.sh 0r  $MYVIMRCDIR/templates/skeleton.sh
