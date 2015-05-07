@@ -8,6 +8,16 @@ au FileType c,cpp set tabstop=2
 au FileType c,cpp set foldmethod=syntax
 au FileType c,cpp set foldlevel=20
 au BufNewFile *.c 0r  $MYVIMRCDIR/templates/skeleton.c
+autocmd BufNewFile *.h call NewHeaderFile()
+
+" Function to take the current name of the file,
+" and place it into the #ifndef NAME_H ... etc 
+" syntax
+function! NewHeaderFile()
+    silent! 0r $MYVIMRCDIR/templates/skeleton.h
+    %s/FILENAME/\=expand("%:t:r")
+    %s/\w\+_H/\U&
+endfunction
 
 """"""""""""""""""""""""""""""
 " Matlab section
@@ -64,10 +74,3 @@ au Filetype *.ino set syntax=c
 """""""""""""""""""""""""""""""
 au BufNewFile *.sh 0r  $MYVIMRCDIR/templates/skeleton.sh
 
-function! NewHeaderFile()
-    silent! 0r $MYVIMRCDIR/templates/skeleton.h
-    %s/FILENAME/\=expand("%:t:r")
-    %s/\#expand("%:t:r")/\U
-endfunction
-
-autocmd BufNewFile *.h call NewHeaderFile()
