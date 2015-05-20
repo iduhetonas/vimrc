@@ -1,5 +1,5 @@
 echo "set runtimepath+=$PWD
-let $MYVIMRCDIR='$PWD'
+let \$MYVIMRCDIR='$PWD'
 
 runtime $PWD/bundle/vim-pathogen/autoload/pathogen.vim
 
