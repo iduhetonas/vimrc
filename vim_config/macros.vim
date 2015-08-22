@@ -38,6 +38,12 @@ nmap <leader>g :!GTAGSFORCECPP="" gtags . && global -t . > ./tags<CR>
 nmap <silent> <leader>t :TagbarToggle<CR>
 nmap <silent> <leader>p :TagbarTogglePause<CR>
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Matlab commands.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <silent> <F2> :!matlab -nosplash -nodesktop -r "run('%:p')" <CR>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Custom search command.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
