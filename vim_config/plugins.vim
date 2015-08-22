@@ -49,7 +49,7 @@ set completeopt=menuone,menu,longest,preview
 " (e.g.) QApplication isn't found
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': [],
-                           \ 'passive_filetypes': ['java', 'cpp'] }
+                           \ 'passive_filetypes': ['java', 'cpp', 'python'] }
 
 " Best Haskell Syntastic checker
 let g:syntastic_haskell_checkers = ['ghc_mod']

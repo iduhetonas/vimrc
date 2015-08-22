@@ -33,7 +33,7 @@ map <silent> <F2> :!matlab -nosplash -nodesktop -r "run('%:p')" <CR>
 """""""""""""""""""""""""""""""
 au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4 
 " For some reason, this command is a huge pain for switching from .py files
-autocmd BufRead *.py inoremap # X<c-h>#<space>
+"autocmd BufRead *.py inoremap # X<c-h>#<space>
 
 """""""""""""""""""""""""""""""
 " Makefile section
