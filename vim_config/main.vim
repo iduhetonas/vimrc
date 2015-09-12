@@ -84,7 +84,8 @@ syntax enable
 
 " Set the max columns to do syntax highlighting
 " Note: This is because Vim syntax highlighting is slow on huge files
-set synmaxcol=150
+" Note: I commented this out because it's annoying on long lines, such as that in LaTeX
+" set synmaxcol=150
 
 set background=dark
 
