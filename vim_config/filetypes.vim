@@ -43,7 +43,9 @@ au FileType make setlocal noexpandtab
 " Haskell section
 """""""""""""""""""""""""""""""
 au Filetype haskell,lhaskell,cabal set tabstop=2 expandtab shiftwidth=2 softtabstop=2
-
+au FileType haskell nnoremap <buffer> <F2> :HdevtoolsType<CR>
+au FileType haskell nnoremap <buffer> <silent> <F3> :HdevtoolsClear<CR>
+au FileType haskell nnoremap <buffer> <silent> <F4> :HdevtoolsInfo<CR>
 """""""""""""""""""""""""""""""
 " C# section
 """""""""""""""""""""""""""""""

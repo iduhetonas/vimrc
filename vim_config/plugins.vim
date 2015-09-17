@@ -66,11 +66,12 @@ let g:syntastic_cpp_include_dirs = ['/usr/include/qt4/QtGui']
 " => ghcmod-vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " There are tons more commands I can add, see :Ghc<TAB> and whatnot
-au FileType haskell nnoremap <buffer> <silent> <F2> :GhcModType<CR>
-au FileType haskell nnoremap <buffer> <silent> <F3> :GhcModTypeClear<CR>
-au FileType haskell nnoremap <buffer> <silent> <F4> :GhcModInfo<CR>
-au FileType haskell nnoremap <buffer> <silent> <F5> :GhcModCheck<CR>
-au FileType haskell nnoremap <buffer> <silent> <F6> :GhcModLint<CR>
+" However, this isn't the right place for it. See macros
+"au FileType haskell nnoremap <buffer> <silent> <F2> :GhcModType<CR>
+"au FileType haskell nnoremap <buffer> <silent> <F3> :GhcModTypeClear<CR>
+"au FileType haskell nnoremap <buffer> <silent> <F4> :GhcModInfo<CR>
+"au FileType haskell nnoremap <buffer> <silent> <F5> :GhcModCheck<CR>
+"au FileType haskell nnoremap <buffer> <silent> <F6> :GhcModLint<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
