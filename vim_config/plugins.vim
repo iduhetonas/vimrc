@@ -91,3 +91,9 @@ autocmd FileType cs nnoremap <F5> :wa!<CR>:OmniSharpBuildAsync<CR>
 " => FSwitch
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <leader>h :FSHere <CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-slime
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:slime_target = "tmux"
+let g:slime_paste_file = tempname()

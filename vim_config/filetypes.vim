@@ -74,3 +74,10 @@ au Filetype *.ino set syntax=c
 " Bash section
 """""""""""""""""""""""""""""""
 au BufNewFile *.sh 0r  $MYVIMRCDIR/templates/skeleton.sh
+
+
+"""""""""""""""""""""""""""""""
+" Prolog section
+"""""""""""""""""""""""""""""""
+
+au BufRead,BufNewFile *.pl set filetype=prolog
