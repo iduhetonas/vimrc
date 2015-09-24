@@ -80,4 +80,4 @@ au BufNewFile *.sh 0r  $MYVIMRCDIR/templates/skeleton.sh
 " Prolog section
 """""""""""""""""""""""""""""""
 
-au BufRead,BufNewFile *.pl set filetype=prolog
+au BufRead,BufNewFile *.pl set filetype=prolog expandtab shiftwidth=2 tabstop=2
