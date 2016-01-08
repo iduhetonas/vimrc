@@ -28,6 +28,7 @@ set tags=./tags;/
 
 au FileType cpp set tags+=$HOME/vimrc/default_tags/cpp_tags
 au BufNewFile,BufRead,BufEnter *.cpp,*.hpp set omnifunc=omni#cpp#complete#Main
+au FileType java set omnifunc=javacomplete#Complete
 let OmniCpp_NamespaceSearch = 1
 let OmniCpp_GlobalScopeSearch = 1
 let OmniCpp_ShowAccess = 1
@@ -49,7 +50,7 @@ set completeopt=menuone,menu,longest,preview
 " (e.g.) QApplication isn't found
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': [],
-                           \ 'passive_filetypes': ['java', 'cpp', 'python','haskell'] }
+                           \ 'passive_filetypes': ['cpp', 'python','haskell'] }
 
 " Best Haskell Syntastic checker
 let g:syntastic_haskell_checkers = ['ghc_mod']

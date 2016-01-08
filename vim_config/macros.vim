@@ -10,11 +10,6 @@
 "" :omap - Display operator pending mode maps
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => TeeJet Copyright Header
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"map <silent> <F2> a/**<CR>*<CR>* Copyright TeeJet Technologies <C-R>=strftime('%Y')<CR><CR>*<CR>*<CR>* @file<Space><CR>*<CR>*/<ESC>kkk$a
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Ctags build command.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Make sure that you're in the root of the tree of your sourcecode, 

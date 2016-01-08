@@ -1,7 +1,6 @@
 """"""""""""""""""""""""""""""
 " C and C++ section
 """""""""""""""""""""""""""""""
-au FileType c,cpp set number
 au FileType c,cpp set expandtab
 au FileType c,cpp set shiftwidth=2
 au FileType c,cpp set tabstop=2
@@ -31,6 +30,7 @@ au BufRead,BufNewFile *.m set tabstop=2
 " Python section
 """""""""""""""""""""""""""""""
 au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4 
+au FileType python nmap <F2> :!python %<CR>
 " For some reason, this command is a huge pain for switching from .py files
 "autocmd BufRead *.py inoremap # X<c-h>#<space>
 
@@ -85,3 +85,11 @@ au BufRead,BufNewFile *.pl set filetype=prolog expandtab shiftwidth=2 tabstop=2
 " LaTeX section
 """""""""""""""""""""""""""""""
 au BufRead,BufNewFile *.tex set wrap
+"TODO: Fix for expand tab, using system() and whatnot (don't have time right
+"now but would be so handy!
+"au BufRead,BufNewFile *.tex nmap <F2> :!pdflatex expand('%:t') && gnome-open expand('%:r')<CR>
+
+"""""""""""""""""""""""""""""""
+" Java section
+"""""""""""""""""""""""""""""""
+au FileType java set expandtab shiftwidth=2 tabstop=2 
