@@ -64,31 +64,6 @@ let g:syntastic_cpp_auto_refresh_includes = 1
 let g:syntastic_cpp_include_dirs = ['/usr/include/qt4/QtGui']
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => ghcmod-vim
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" There are tons more commands I can add, see :Ghc<TAB> and whatnot
-" However, this isn't the right place for it. See macros
-"au FileType haskell nnoremap <buffer> <silent> <F2> :GhcModType<CR>
-"au FileType haskell nnoremap <buffer> <silent> <F3> :GhcModTypeClear<CR>
-"au FileType haskell nnoremap <buffer> <silent> <F4> :GhcModInfo<CR>
-"au FileType haskell nnoremap <buffer> <silent> <F5> :GhcModCheck<CR>
-"au FileType haskell nnoremap <buffer> <silent> <F6> :GhcModLint<CR>
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => YouCompleteMe
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:ycm_confirm_extra_conf = 0 " Turns off confirm of ycm_loading
-let g:ycm_global_ycm_extra_conf = '~/vimrc/scripts/.ycm_extra_conf.py'
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Omnisharp
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-autocmd FileType cs setlocal omnifunc=OmniSharp#Complete
-autocmd FileType cs nnoremap <F5> :wa!<CR>:OmniSharpBuildAsync<CR>
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => FSwitch
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <leader>h :FSHere <CR>
