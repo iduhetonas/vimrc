@@ -7,6 +7,7 @@ This is my vimrc configuration, based initially on https://github.com/amix/vimrc
 ## Requirements
 
 Vim 7.3+
+git (for cloning the plugins)
 
 ### Optional Requirements
 

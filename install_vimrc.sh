@@ -7,4 +7,6 @@ source $PWD/vim_config/plugins.vim
 source $PWD/vim_config/macros.vim
 " > $HOME/.vimrc
 
+git clone https://github.com/majutsushi/tagbar $PWD/bundle/tagbar
+
 echo "Vimrc installed!"
