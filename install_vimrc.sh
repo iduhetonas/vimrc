@@ -8,5 +8,6 @@ source $PWD/vim_config/macros.vim
 " > $HOME/.vimrc
 
 git clone https://github.com/majutsushi/tagbar $PWD/bundle/tagbar
+git clone https://github.com/joe-skb7/cscope-maps $PWD/bundle/cscope-maps
 
 echo "Vimrc installed!"

@@ -73,3 +73,10 @@ nmap <leader>h :FSHere <CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:slime_target = "tmux"
 let g:slime_paste_file = tempname()
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => cscope
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Need to let it be relative to the directory, otherwise
+" Vim can't find the tags
+set cscoperelative

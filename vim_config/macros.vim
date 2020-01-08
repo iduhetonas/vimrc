@@ -19,6 +19,11 @@
 nmap <leader>c :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Cscope build command.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Similar to the ctags command, but with Cscope
+nmap <leader>s :!cscope -R -b -k 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Gtags build command.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Must be in root node (as stated in the Ctags build command) but
