@@ -57,3 +57,8 @@ nmap <silent> <leader>p :TagbarTogglePause<CR>
 " => Ghc-mod commands.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <leader>l :GhcModInfo<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-clang-format commands.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <silent> <leader>f :ClangFormat<CR>

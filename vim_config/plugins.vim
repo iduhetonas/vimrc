@@ -80,3 +80,11 @@ let g:slime_paste_file = tempname()
 " Need to let it be relative to the directory, otherwise
 " Vim can't find the tags
 set cscoperelative
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-clang-format
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" B&O projects use Webkit
+let g:clang_format#code_style = "webkit"
+" Consider using :ClangFormatAutoEnable for reformatting on
+" buffer rewrites
