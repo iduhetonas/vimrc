@@ -74,7 +74,7 @@ nmap <leader>f :call ClangFormat()<CR>
 
 " Used for generating .clang-format to webkit, if necessary. Ideally can be
 " changed for anything
-nmap <leader>y :clang-format -style=webkit -dump-config > .clang-format
+nmap <leader>y :!clang-format -style=webkit -dump-config > .clang-format
 
 "" Reformat on save. May need to be modified, found on the website above
 "" (llvm.org)
