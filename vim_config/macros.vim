@@ -59,6 +59,27 @@ nmap <silent> <leader>p :TagbarTogglePause<CR>
 nmap <leader>l :GhcModInfo<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => vim-clang-format commands.
+" => clang-format.py
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nmap <silent> <leader>f :ClangFormat<CR>
+"Was the example mentioned here: http://clang.llvm.org/docs/ClangFormat.html#vim-integration
+"Only works for one line. 
+"nmap <leader>f :py3f /usr/share/vim/addons/syntax/clang-format.py<cr>
+
+" Reformats entire file, found reference here: https://www.reddit.com/r/vim/comments/6paspt/having_trouble_getting_clangformat_working_with/
+function ClangFormat()
+    let l:lines = "all"
+    py3f /usr/share/vim/addons/syntax/clang-format.py
+endfunction
+nmap <leader>f :call ClangFormat()<CR>
+
+" Used for generating .clang-format to webkit, if necessary. Ideally can be
+" changed for anything
+nmap <leader>y :!clang-format -style=webkit -dump-config > .clang-format
+
+"" Reformat on save. May need to be modified, found on the website above
+"" (llvm.org)
+""function! Formatonsave()
+""  let l:formatdiff = 1
+""  py3f /usr/share/vim/addons/syntax/clang-format.py
+""endfunction
+""autocmd BufWritePre *.h,*.cc,*.cpp call Formatonsave()

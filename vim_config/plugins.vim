@@ -85,6 +85,6 @@ set cscoperelative
 " => vim-clang-format
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " B&O projects use Webkit
-let g:clang_format#code_style = "webkit"
+let g:clang_format#style_options = {"BasedOnStyle" : "WebKit" }
 " Consider using :ClangFormatAutoEnable for reformatting on
 " buffer rewrites
