@@ -22,7 +22,7 @@ nmap <leader>c :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q
 " => Cscope build command.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Similar to the ctags command, but with Cscope
-nmap <leader>s :!cscope -R -b -k 
+nmap <leader>s :!cscope -b -q -k -R
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Gtags build command.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
